@@ -1,29 +1,30 @@
 
-Activity:
+# Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
-# file by entering the following command in your Terminal: 
+# file by entering the following command in your Terminal:
 # `ruby hashes_1.rb`
 
-foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+foods = {"apples" => 23, "grapes" => 507, "eggs" => 48}
+p foods
 
-# Write code that prints all of the 'keys' of the foods variable 
+# Write code that prints all of the 'keys' of the foods variable
 # you created above:
-# YOUR CODE HERE
+p foods.keys
 
-# Write code that prints all of the 'values' of the foods variable 
+# Write code that prints all of the 'values' of the foods variable
 # you created above:
-# YOUR CODE HERE
+p foods.values
 
-# Write code that prints the value of the second food of the foods variable 
+# Write code that prints the value of the second food of the foods variable
 # you created above:
-# YOUR CODE HERE
+p foods["grapes"]
 
-# Write code that adds a food to the foods hash. 
+# Write code that adds a food to the foods hash.
 # Then, print the updated hash:
-# YOUR CODE HERE
+foods["peanutbutter"] = 3
+p foods
 
 
 #-------------------
@@ -37,16 +38,25 @@ p zoo
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
+email = {
+  "sender" => "Anna Marie",
+  "subject" => "Roller skating next week",
+  "date" => "Thursday, Apil 21, 2022",
+  "timestamp" => "4:55 PM Central Time",
+  "responded" => "Not yet"
+}
+
+
 # Write code that prints your email hash to the terminal.
+ p email
 
-
-# Write code that prints all of the 'keys' of the email hash 
+# Write code that prints all of the 'keys' of the email hash
 # you created above:
-# YOUR CODE HERE
+p email.keys
 
-# Write code that prints all of the 'values' of the email hash 
+# Write code that prints all of the 'values' of the email hash
 # you created above:
-# YOUR CODE HERE
+p email.values
 
 
 #-------------------
@@ -67,6 +77,23 @@ posts = ["image at beach", "holiday party", "adorable puppy", "video of cute bab
 # that relate to each individual Instagram post:
 
 
+# posts = [
+#   {
+#     image_src" => "./images/beach.png",
+#     "caption" => "At the beach with my besties",
+#     "timestamp" => "4:37 PM August 13, 2019",
+#     "number_likes" => 0,
+#     "comments" => []
+#   },
+#   {
+#     image_src => "./images/holiday-party.png",
+#     caption => "What a great holiday party omg",
+#     timestamp => "11:37 PM December 31, 2019",
+#     number_likes => 13,
+#     comments => []
+#   }
+# ]
+
 posts = [
   {
     image_src: "./images/beach.png",
@@ -74,7 +101,7 @@ posts = [
     timestamp: "4:37 PM August 13, 2019",
     number_likes: 0,
     comments: []
-  }, 
+  },
   {
     image_src: "./images/holiday-party.png",
     caption: "What a great holiday party omg",
@@ -84,16 +111,43 @@ posts = [
   }
 ]
 
+
 p posts
 p posts[0]
 
 
-# The code snippet above shows an Array with 2 elements. Each element in the Array is a 
-# Hash. Each of those Hashes has 4 key-value pairs. This may LOOK 
+# The code snippet above shows an Array with 2 elements. Each element in the Array is a
+# Hash. Each of those Hashes has 4 key-value pairs. This may LOOK
 # a bit daunting - it's OK! You don't need to be 100% comfortable with this, but it's
 # good to have some exposure before going into Mod 1.
 
 
-# YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
+# YOU DO: Create an array of at least 3 EMAIL Hashes, using the same
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+  {
+    "sender" => "Anna Marie",
+    "subject" => "Roller skating next week",
+    "date" => "Thursday, Apil 21, 2022",
+    "timestamp" => "4:55 PM Central Time",
+    "responded" => "Not yet"
+  },
+  {
+    "sender" => "Carlos",
+    "subject" => "Date night",
+    "date" => "Friday, April 22, 2022",
+    "timestamp" => "10:00 AM Central Time",
+    "responded" => "Yes"
+  },
+  {
+    "sender" => "Moe",
+    "subject" => "Visiting New Orleans",
+    "date" => "Monday, April 25, 2022",
+    "timestamp" => "10:00 AM Central Time",
+    "responded" => "Yes"
+  }
+]
+
+p emails
